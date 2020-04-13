@@ -33,3 +33,10 @@
 
 # Build directory
 build/
+
+# Visual Studio Code
+.vscode/
+
+# clangd
+.clangd/
+compile_commands.json
