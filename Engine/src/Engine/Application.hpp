@@ -1,5 +1,5 @@
 #pragma once
-#include "Core.hpp"
+#include "Core.h"
 
 namespace Engine {
 
@@ -11,6 +11,6 @@ namespace Engine {
 		void run();
 	};
 
-	// To be defined in client (Sandbox.cpp)
+	// To be defined in client app (Sandbox.cpp)
 	Application* createApplication();
 }
