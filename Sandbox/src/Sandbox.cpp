@@ -1,11 +1,14 @@
+// -I/usr/lib/llvm-10/include/c++/v1
 #include <Engine.hpp>
+//#include <iostream>
+//#include <array>
 
 // My sandbox "extends" the engine
 class Sandbox : public Engine::Application {
 public:
-	Sandbox() {}
+	Sandbox() = default;
 
-	~Sandbox() {}
+	~Sandbox() override = default;
 };
 
 // Entry point

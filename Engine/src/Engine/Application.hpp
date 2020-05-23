@@ -13,4 +13,4 @@ namespace Engine {
 
 	// To be defined in client app (Sandbox.cpp)
 	Application* createApplication();
-}
+}  // namespace Engine
