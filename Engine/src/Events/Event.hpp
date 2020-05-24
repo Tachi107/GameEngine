@@ -1,8 +1,5 @@
 #pragma once
 #include "src/Core.h"
-#include <ostream>
-#include <string>
-#include <functional>
 
 namespace Engine {
 
