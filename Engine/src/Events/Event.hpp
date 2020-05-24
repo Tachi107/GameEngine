@@ -1,5 +1,5 @@
 #pragma once
-#include "Engine/Core.h"
+#include "src/Core.h"
 #include <ostream>
 #include <string>
 #include <functional>
@@ -53,6 +53,18 @@ namespace Engine {
 	public:
 		explicit EventDispatcher(Event& event) : event(event) {}
 		
+		/* 
+		 * If I recive an event via an onEvent() function,
+		 * I have no way to know what event it is,
+		 * because I'll recive it as a general Event object.
+		 * To handle it, I can call this dispatch function,
+		 * passing it the function that I have to apply
+		 * on that event.
+		 * If the event that I'm trying to dispatch
+		 * matches the type of the function (for example, a WindowResizeEvent function)
+		 * I'll run the function. That function could completly handle
+		 * the event or not, so that's why it returns a bool.
+		 */
 		template<typename type>
 		bool dispatch(eventFunction<type> function) {
 			if (event.getEventType() == type::getStaticType()) {

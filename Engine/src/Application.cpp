@@ -1,7 +1,7 @@
 #include "Application.hpp"
-#include "Events/Event.hpp"	//TODO: Questo non dovrei poterlo fare
-#include "Engine/Events/ApplicationEvent.hpp"
-#include "Engine/Log.hpp"
+#include "Events/Event.hpp"
+#include "Events/ApplicationEvent.hpp"
+#include "Log.hpp"
 
 namespace Engine {
 	
